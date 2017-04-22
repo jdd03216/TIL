@@ -1,0 +1,49 @@
+.parent::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+>>>플롯 뒷처리를 해 줌. 눌러줌.
+
+
+grid 부트스트렙.
+>>>합은 무조건 12
+>>>연속으로 클래스명을 줄 수 있다. 
+>>>offset은 무조건 왼쪽으로 여백을 준다.
+
+다중클래스
+class = "child red"
+>>>두개의 클래스가 생성된다.
+
+깃
+올릴 때
+git init >>>깃에 등록
+
+git add . >>>전체 파일 등록
+or
+git add 파일명 >>>파일 등록
+
+git status >>>파일 확인
+
+git -m commit '' >>>버전을 올린다.
+
+git remote add origin >>>내 깃에 연결한다.
+
+git push -u origin master >>>내 깃에 올린다.
+
+
+내려받을 때
+git clone >>>전체 받을때
+
+git pull >>>수정본만 동기화(업데이트)
+
+TIL >>> todat i learned
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+  get '/home/index' => 'home#index'
+>>출약형 :  get 'home/index'
+
+<form>
+    제목 : <input type="text" name="post_title"></input> <br><br>
+    내용 : <textarea name="content"></textarea> <br><br>
+    <input type="submit" value="게시"></input>
+</form>
+
+t.string :db_title
+t.text :db_content   >>>>스트링보다 받을 수 있는 값이 크다.
+
+    <a href = '/destroy/<%= x.id %>'>[삭제]</a>
+    get '/destroy/:post_id' => 'home#destroy'
+>>>심볼 꼭 붙입시다
+
+>>>디스트로이 콘트롤러
+        @destroy_post = Post.find(params[:post_id])
+        @destroy_post.destroy
+
+
+
+
+
+  def edit
+    @edit_post = Post.find(params[:post_id])
+  end
+  
+  def update
+    new_post = Post.find(params[:post_id])
+    new_post.db_title = params[:title]
+    new_post.db_content = params[:content]
+    new_post.save
+    
+    redirect_to '/index'
+  end
+
+
+<h1>수정 하는 곳이여</h1>
+
+<form action = "/update/<%= @edit_post.id %>" method = "POST">
+    <input type = "text" name = "title" value = "<%= @edit_post.db_title %>"></input><br>
+    <textarea name = "content"><%= @edit_post.db_content %></textarea> <br>
+    <input type = "submit" value = "제출"></input>
+</form>
+
+
+>>>>@edit_post.빼내고 싶은 값
+>>>>@edit_post.id >>>아이디 값
+
+
+
+
+
+
+
+
+
+
+
+
+

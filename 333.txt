@@ -1,0 +1,279 @@
+c9.io >>> 클라우드9 사이트
+>>>파일 세이브올 항상
+통합개발환경
+
+부트스트랩// >>> 그리드는 전부 12여야 한다.
+
+자바스크립트 >>라이브러리
+복사 붙여넣기만 하면 됨 >>jquery
+
+>>>>다운로드
+
+container
+
+cdn에서 http를 없애도 기능 가능하다
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8  col-xs-6" >
+
+                <div class="well">저는 여덟칸을 차지합니다</div>
+
+            </div>
+
+            <div class="col-md-4  col-xs-6">
+
+                <div class="well">저는 네칸을 차지합니다</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+자바스크립트는 스크립트 태그 안에 있어야 한다.
+바디 밖에서
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8  col-xs-6" id="book">
+
+                <div class="well">저는 여덟칸을 차지합니다</div>
+
+            </div>
+
+            <div class="col-md-4  col-xs-6" id="clickme">
+
+                <div class="well">저는 네칸을 차지합니다</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+
+    $( "#clickme" ).click(function() {
+
+  $( "#book" ).fadeOut( "slow", function() {
+
+    // Animation complete.
+
+  });
+
+});
+
+</script>
+
+
+>>>>> 이렇게 아이디를 똑같이 주어야 한다.
+>>>그대로 있으려면
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8  col-xs-6" >
+
+                <div class="well" id="book">저는 여덟칸을 차지합니다</div>
+
+            </div>
+
+            <div class="col-md-4  col-xs-6">
+
+                <div class="well"  id="clickme">저는 네칸을 차지합니다</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+
+    $( "#clickme" ).click(function() {
+
+  $( "#book" ).fadeOut( "slow", function() {
+
+    // Animation complete.
+
+  });
+
+});
+
+</script>
+
+>>>>>오프셋을 쓰면
+>>>>>4칸짜리가 8칸 뒤에 고정된다,
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8  col-xs-6" >
+
+                <div class="well" id="book">저는 여덟칸을 차지합니다</div>
+
+            </div>
+
+            <div class="col-md-4  col-xs-6">
+
+                <div class="well"  id="clickme">저는 네칸을 차지합니다</div>
+
+            </div>
+
+            <div class="col-md-4  col-xs-6  col-md-offset-8" >
+
+                <div class="well"  id="clickyou">저는 네칸을 차지합니다</div>
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+    $( "#clickme" ).click(function() {
+
+  $( "#book" ).fadeOut( "fast", function() {
+
+    // Animation complete.
+
+  });
+
+});
+
+</script>
+
+<script>
+
+// With the element initially hidden, we can show it slowly:
+
+$( "#clickyou" ).click(function() {
+
+  $( "#book" ).fadeIn( "fast", function() {
+
+    // Animation complete
+
+  });
+
+});
+
+</script>
+
+
+프레임워크는 프렌치창업과 같은 것
+라이브러리를 갖고오지 않고 그대로 있는 상태로 개발을 할 수 있다.
+
+
+MVC
+모델 뷰 콘트롤러
+>>> 서버
+
+베쉬
+rails generate controller move
+
+앱에 콘트롤러 >>>
+def '' end
+
+
+액션명과 뷰파일은 같은 이름이어야 한다.
+erb >> 루비파일
+
+
+루비의 주석처리 #
+
+  root :to =>'ironman#shoot'
+
+항상 콘트럴러명#뷰명
+
+뷰의 레이아웃의 어플리케이션을 보면 많은 값들이 들어가 있다.
+
+콘트롤러명>> 뷰명 생성>> <h1>안녕~</h1>
+
+>>>>>>> 
+콘트롤러 
+아이언맨 >>> 바디
+레이아웃 >>> 헤드
+
+
+=====================================
+
+rails g controller ironman
+
+
+    def shoot
+
+        @mango ='hi there.'
+
+    end
+
+>>>  <h1><%= @mango %></h1>   >>>변수
+
+>>>  root 'ironman#shoot'
+
+
+>>>>>>>>>>>>>>같은 결과
+
+
+-------------------------------
+
+코드아카데미 루비 1~6
+>>>>루비의 기본
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

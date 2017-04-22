@@ -1,0 +1,216 @@
+링크 <a href="">이미지나 문자 넣을 수도</a>
+이미지 <img src="" />
+<h1> 문단1 </h1>
+<h2> 문단2 </h2>
+<p> 엔터 </p>
+
+<ol> 오프닝 태그 = 정렬됨 </ol>
+<li> 오프닝 태그 안에 들어가서 순서대로 쓰여짐 </li>
+<ul> 오프닝 태그 = 정렬되지 않음 </ul>
+
+<p style="font-size: 12px"> 폰트 크기 </p>
+<h2 style="color:red"> 폰트 색 </h2>
+<h2 style="color: green; font-size:12px"> 혼합 </h2>
+
+<li style="font-family: Arial">Hello!</li>
+<p style="background-color: red;">Hello!</p>
+<h1 style="text-align:center"> 글씨를 중앙에 </h1>
+<h1 style="text-align:lefr"> 글씨를 왼쪽에 </h1>
+<h1 style="text-align:right"> 글씨를 오른쪽에 </h1>
+
+<strong> 글자를 굵게 </strong> 
+<em> 글자를 기울게 </em>
+
+<table> 표를 만듬 <table>
+<tr> 밑으로 가는 박스를 만듦 </tr>
+<td> 옆으로 가는 박스를 만듦 </td>
+
+
+<table border="1px">
+  <thead>
+    <tr>
+        <th>famous Monster</th>
+        <th>Birth Year</th>
+    </tr>
+  </thead>
+              
+  <tbody>
+    <tr>
+        <td>One</td>
+    </tr>
+        <td>two</td>
+    <tr>
+        <td>three</td>
+    </tr>
+  </tbody>
+</table>
+
+<tbody> 표의 바디 </tbody>
+<thead> 표의 제목 </thead>
+<th> 표의 제목 박스, 굵은 글자, 가운데 정렬 </th>
+<th colspan="2"> 옆으로 박스 "2"개가 합쳐짐 </th>
+
+<div style="width:50px; height:50px; background-color:red"></div>
+>>>네모 모양
+
+<span> 문자 태그 </span>
+
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+>>>언어 css를 쓸 수 있다,  , 
+
+주석 <!-- ㅇㄹㅇㄹ -->
+
+*css문자
+
+주석 /* ㅇㄹㅇㅇ */
+
+p {font-size: 44px;}
+
+div {
+    background-color:#cc0000;
+    height:100px;
+    width:100px;
+}>>>html에 div가 있다면 css에서 만들 수 있다.
+
+td {
+    height:50px;
+    border: 1px dashed blue;
+}
+
+table {
+    border: 1px solid black;
+}
+
+a {
+    color:#cc0000;
+    text-decoration:none; >>>>링크 밑줄 지워줌
+}
+
+border:1px solid #4682b4 >>>경계선 지정
+
+border-style :dashed, solid, dotted
+	      >>점점, 그냥 선, 정사각형 점
+border-radius:5px; >>>모서리 둥글게
+
+margin:auto;>>>상자가 보통 가운데로 됨
+text-align:center;>>>글자 가운데정렬(양옆에서만)
+
+
+div div div h3 {
+    color:red;
+} >>>>3번째 div h3를 지정
+
+
+* {             >>>>>전체 선택 >>>다음에 다른 설정을 써도 바꿀 수 없다.
+    border:1px dashed #3A5fcd;
+}               >>>>>border:표처럼 선을 만든다.
+
+
+div > p {
+    color:#7ac5cd;
+}      >>>div안의 p에만 적용
+
+
+
+*class , id*
+
+
+<p id="intro"></p>     //    #intro
+id=css에서 자신이 정한 이름으로 지정할 수 있다. 같은 이름이 있을 수 없다.
+
+<p class="intro"></p>    //    .intro
+class=id와 동일. 같은 이름이 있을 수 있다.
+
+a:hover {              >>마우스를 갇다대면 설정한 것처럼 바뀐다.
+	color: #cc0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+a:link: An unvisited link.   >>안가본 사이트 설정
+a:visited: A visited link.   >>가본 사이트 설정
+a:hover: A link you're hovering your mouse over.  >>마우스 커서를 갇다댔을 때 설정
+
+p:first-child {    >>>부모의 처음 자식일 때만 설정
+    color: red;
+}
+
+p:nth-child(2) {   >>>가로 안에 숫자를 쓰면 그 번째의 줄에 위와 같은 효과를 준다.
+    color: red;
+}
+
+display: 
+block: This makes the element a block box. It won't let anything sit next to it on the page! It takes up the full width.
+위아래로 나란히 두기
+inline-block: This makes the element a block box, but will allow other elements to sit next to it on the same line.
+옆으로 나란히 두기
+inline: This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line).
+??? >>>>겹치기?
+none: This makes the element and its content disappear from the page entirely!
+없애기
+
+margin
+여백은 요소 주위의 공간입니다. 
+여백이 클수록 요소와 요소 사이의 공간이 넓어집니다. 
+HTML 요소를 서로 가깝게 또는 멀리서 이동하도록 
+여백을 조정할 수 있습니다.
+
+border
+테두리는 요소의 가장자리입니다. 
+경계 속성을 설정할 때마다 우리가 눈에 띄는 것입니다.
+
+padding
+패딩은 내용과 경계 사이의 간격입니다. 
+CSS를 사용하여이 값을 조정하여 테두리를 콘텐츠에서 
+더 가깝거나 멀리 이동시킬 수 있습니다.
+
+content
+내용은 상자의 실제 "물건"입니다. 
+우리가 <p> 요소에 대해 말하면, "stuff"는 
+단락의 텍스트입니다.
+
+
+margin:auto;    >> 보통 가운데로 정렬시킨다.
+
+margin-top: /*some value*/
+margin-right: /*some value*/
+margin-bottom: /*some value*/
+margin-left: /*some-value*/
+
+padding-top: /*some value*/
+padding-right: /*some value*/
+padding-bottom: /*some value*/
+padding-left: /*some-value*/
+
+padding : 40px; >>> 전체 적용
+
+float:right;  >>>> 오른쪽 정렬? 그쪽으로 붙인다.
+
+clear: /*right, left, or both*/  >>>>
+
+position:absolute;  >>>>>
+position:relative;  >>>>>
+position:fixed;     >>>>>스크롤을 내려도 그대로 있다
+
+z-index:1;  >>>>>????
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+rails g model post
+
+데이터베이스
+t.string :db_title
+t.string :db_content
+
+>>>>>>>>>>>>>>>>>>>>>>>>순서 뒤바뀌면 아니됨!
+
+rake db:migrate
+
+액션.크리에이트
+new_post = Post.new
+new_post.db_title = @my_title
+new_post.db_content = @my_content
+new_post.save
+
+redirect_to "/read"
+
+액션.리드
+@every_post = Post.all
+
+리드 탭
+<% @every_post.each do |x| %>
+	<h2> 제목 : <%= x.db_title %> 
+	내용 : <%= x.db_content %> <hr></hr> </h2>
+<% end %>
